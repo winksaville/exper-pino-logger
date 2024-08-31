@@ -2,6 +2,8 @@
 
 Experiment with pino logging
 
+I've created issue 2037 [Simpler default logging output for objects](https://github.com/pinojs/pino/issues/2037).
+
 If you wish to "run" code in this project clone the repo and run
 `npm install` to install the dependencies.
 
@@ -24,7 +26,6 @@ $ cat -n test-object-logging.js
      6  console.log("mysql=%s", mysql);
      7  //log.info(mysql, "mysql");
      8
-     9  log.debug("test-pino:-");
 wink@3900x 24-08-31T18:12:48.875Z:~/prgs/javascript/pino-logging
 $ node test-object-logging.js | wc -c
 636
@@ -40,7 +41,6 @@ $ cat -n test-object-logging.js
      6  //console.log("mysql=%s", mysql);
      7  log.info(mysql, "mysql");
      8
-     9  log.debug("test-pino:-");
 wink@3900x 24-08-31T18:13:28.338Z:~/prgs/javascript/pino-logging
 $ node test-object-logging.js | wc -c
 10020
